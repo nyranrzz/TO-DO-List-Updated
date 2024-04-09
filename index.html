@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +9,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>NYRAN TODO</title>
 </head>
-
 <body>
     <div class="all-task">
         <div class="card">
             <div class="default"></div>
             <h1>To-Do List</h1>
+            <div class="filter">
+             
+            </div>
             <div class="card-info card-context card-add-input ">
                 <form action="">
+                    
                     <div class="input">
                         <input type="text" placeholder="Add Task...">
                         <i class="fa-regular x fa-circle-xmark"></i>
@@ -25,26 +27,19 @@
                 </form>
             </div>
             <div class="card-info card-context card-list d-none">
-                <div class="filter"> <i class="fa-solid fa-arrow-down-a-z down"></i>
-                    <i class="fa-solid fa-arrow-up-z-a up"></i>
-                </div>
-
+                
                 <div class="list">
                     <ol>
                         <span style="color: red;" class="validation-span d-none">Düzgün daxil edin!!!</span>
-
                     </ol>
 
                 </div>
-
             </div>
-
         </div>
         <button class="btn" type="submit">+ Add
-
         </button>
     </div>
     <script src="./script.js"></script>
+    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
 </body>
-
 </html>
